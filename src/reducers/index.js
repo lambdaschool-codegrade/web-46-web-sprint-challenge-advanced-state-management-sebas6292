@@ -23,9 +23,7 @@ const reducer = (state = initialState, action)=>{
         case FETCH_FAIL: 
         return {
             ...state, 
-            loading: false,
-
-            error:'Opps, something went wrong'
+            error: action.payload
         }
         case ADD_SMURF: 
         return {

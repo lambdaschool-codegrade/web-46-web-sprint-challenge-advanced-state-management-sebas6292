@@ -11,7 +11,7 @@ const reducer = (state = initialState, action)=>{
         return {
             ...state,
             loading: true, 
-            error: 
+            error: ''
         }
         case FETCH_SUCCESS: 
         return {
